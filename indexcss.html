@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="EN">
+
+
+<head>
+	<title>CSS - Stylesheets</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel ="stylesheet" type="text/css" href="css/main.css">
+<style>
+	
+	b { font-family: Courier-New, monospace; font-size: 14pt;" }
+	.topics {
+	color : blue;
+		}
+</style>
+<a href ="index.html"> Jump to index 1</a>
+<a href ="index2.html"> Jump to index 2</a>
+	<a href ="indexcss.html"> Jump to index CSS</a>
+	<a href ="contacts.html"> Jump to contacts example</a>
+	<a href ="recipelist.html"> Jump to recipelist</a>
+	<a href ="skills.html"> Jump to My Personal Skills Assessment</a>
+</head>
+<body>
+	<h1>Stylesheets</h1>
+	<p> Styles can be applied externally to the style attribute by specifying:</p>
+		<ul>
+			<li>tagname</li>
+			<li>id</li>
+			<li>class</li>
+		</ul>
+		<p>Styles can be defined in the <b class="topics">style </b>tag of the page or in a separate file and included using the link tag. </p>
+
+		<p style="font-family: Courier-New, monospace; font-size: 14pt;" > &lt;link rel='stylesheet' type='text/css' href='theme.css'&gt; </p>
+		<h2> Styles by tagname </h2>
+		<p> Includes the tag to apply the style to. Applies the style to EVERY tag in the page. Style definition may contain multiple styles.</p>
+		<h2> Styles by id</h2>
+		<p>Must include the id of the tag to style. Id value must start with a hash char (#). Applied to the tag (if any) with the id value.</p>
+		<h2>Styles by class name</h2>
+		<p>Class name can be any unique name. Name must be applied with a period (.) Applied to any tag using the classname in the class attribute.
+		</p>
+		<h2>Styles in a stylesheet</h2>
+		<p>Styles can be defined in a file (.css) and include in a page using the &lt;link&gt; tag. Multiple stylesheeets can be included in the same page. Last style encountered wins!</p>
+		<b> &lt;head&gt;</b>
+			<b>&lt;link rel = "stylesheet"
+				type="text/css" href="master.css"&gt;
+				&lt;link rel="stylesheet"
+			type="text/css" href="page.css"&gt;</b>
+			<p> If you use a style. Use it inline or in the style tag in the head. If you use a stylesheet, use the link tag. </p>
+			<h2>Multiple applications of the same style</h2>
+				<p>The same style can be applied to the same tag, id, or classname. Separate different tag, id, or classname by a comma before style definition</p>
+			<h2> Selector tag inside tag</h2>
+			<p>Selector specifics to style all tags that are contained inside another tag. Tags are separated by a space.</p>
+			
+
+
+
+</body>			
+</html>

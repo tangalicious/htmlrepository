@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="EN">
+<head>Dot Net Class Notes
+	<title>HTML: Week 5, Day 1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel ="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class ="menu">
+	<a href ="index2.html">Index 2</a>
+	<a href ="indexcss.html">Index CSS</a>
+	<a href ="contacts.html">Contacts</a>
+	<a href ="cv.html">Curriculum Vitae</a>
+	<a href ="recipelist.html">Recipes</a>
+	<a href ="skills.html">Skills</a>
+	<!-- <a href ="" </a>
+	<a href ="" </a> -->
+	</div>
+<h1>The Q1 Dot Net Boot Camp</h1>
+	<br>
+	<select>
+		<option value = "R">Red
+		<option value = "W" selected>White
+		<option value = "B">Blue
+	</select>
+	<br>	
+	<input type="text" value="Default text"></input>
+	<br>
+	<a href ="https://en.wikipedia.org/wiki/Mona_Lisa"> <img src="images/monalisa.jpg" height="446" width="300"></a>
+	<br>
+	<button OnClick ="javascript:alert('Clicked')">Click Me!</button>
+
+	<h1> HTML Basics </h1>
+
+	<p>
+		HTML stands for Hyper-Text Markup language. Marked up language gives more value to regular text. HTML is the core tech on the web. Every single page is an HTML page.
+
+		Browsers understand how to read the tags. HTML is the universal standard for how web pages work. 
+
+		As a markup language, there will be a portion of the page that isn't rendered.
+</p>
+		<h2>&lt;Tags&gt;</h2>
+		<br>
+			<img src ="images/tags.jpg" height="150" width="150"><caption>"You're it. "</caption>
+			<br>
+			<p> Names surrounded by opening and closing tags are rendered. Most but not all having opening and closing tags. Tags may also contain attributes. These attributes usually contain "" marks and rest between the open and close brackets. 
+
+			In HTML, quoting works with both single or double quotes. However, they MUST be paired. i.e. "ABC" or 'ABC' both work.
+			</p>
+
+			<h2>&lt;!doctype html&gt;</h2>
+			<p> This is preamble. Starts at the beginning of each page.</p>
+			<h2>&lt;html lang ="en"&gt;</h2>
+			<p> The root of an HTML document. All other tags must exist within the HTML tags. May contain only one head and one body in that order.</p>
+			<h2>&lt;head&gt;</h2>
+			<p>Contains metadata about the document. Must contain the TITLE tag. May include information about: 
+				<ul>
+					<li>author</li>
+					<li>description</li>
+					<li>css</li>
+					<li>javascript</li>
+				</ul>
+			<h2>&lt;body&gt;</h2>
+			<p>Contains the visible elements of the html document. There can only be ONE BODY tag.</p>
+			<h2>&lt;Tags cont...&gt;</h2>
+			
+			<p>Tags are BLOCK or INLINE</p>
+			<h2> Inline Elements </h2>
+<br>
+			<img src ="images/inlineskates.jpg" height="300" width="300"><caption>"Close but no cigar."</caption>
+			<br>
+			<p> Inline elements are rendered to flow right along with any other elements. No space is added above, below, right or left. Examples include:</p>
+			<ul>
+				<li><b>&lt;a&gt;</b>: anchor tag, AKA "link". Renders a string that, when clicked, transfers to another url. Requires href atttribute. Content is the text to display on the page. </li>
+				<li><b>&lt;button&gt;</b>: button tag renders a button containing text</li>
+				<li><b>&lt;img&gt;</b>: renders an image, image is specified with SRC attribute. Size can be modified with heigh and width</li>
+				<li><b>&lt;input&gt;</b>:a form tag. Used mostly to render an input box. Can render a number of different form elements based on the type attribute</li>
+				<li><b>&lt;select, option&gt;</b>: select from options. Renders a list or dropdown list with a defined set of options. Options are defined using OPTION tags within the SELECT tags. Options can use the value attribute.</li>
+				<li><b>&lt; span&gt;</b>: group collection of data and elements. Provides the ability to apply a sstyles to a group of data and/or elements. Used to denote emphasis and change how text is rendered.</li>
+			</ul>
+			<h2> &lt;block&gt; </h2>
+			<p> Different than an inline element. </p>
+			<h2> &lt;div &gt;</h2>
+				<p> Div - group elements, similar to a span tag, but div is a block element</p>
+				<h2>&lt;form&gt;</h2>
+				<p>Form is a collection of user input tags. Attribute method = get or post, attribute action = url
+					<h2>&lt;ol, ul, li&gt;</h2>
+					<p> Ordered and unordered lists, create lists with either bullets, or numbers. Items are declared with the &lt;li&gt; tag. 
+					
+					<h2>&lt;p&gt;</h2>
+					<p> Paragraph, renders content inline with a blank line above and below </p>
+					<h2>&lt;table&gt;</h2>
+					<p>Renders text in rows and columns. THEAD defines the table headers. TBODY defines the table data. TR defines the rows. TD defines one column. </p>
+					<table> <tr><td>Label</td><td>Data</td></tr></table>
+					<h2> &lt;Attributes&gt;</h2>
+					<p> Attributes add more info or IDs to an html tag. Values for attributes should be enclosed in quotes. Common attributes: </p>
+					<ul>
+						<li>id</li>
+						<li>style</li>
+						<li>class</li>
+						<li>value</li>
+					</ul>
+					<h2>id attribute</h2>
+					<p>provides a unique identifier for any tag it is applied to. The identifier must be unique among all other indentifiers on this html document. Very useful to programmatically access a particular tag</p>
+					<h2>style attributes</h2>
+					<p>provides the ability to attach CSS styles to a tag</p>
+					<h2>class attribute</h2>
+					<p>provides the ability to assign a CSS class style to a tag. The class style must be defined in an included stylesheet. Multiple class styles are separated by a space and are applied in order of appearance. </p>
+					<h2> value attribute</h2>
+					<p>Provides the ability to get and set the contents of a form tag</p>
+					<h2>Events</h2>
+					<p>Events are the way to respond to user interactions with the html page. To respond to an event, the event must be added to the tag along with the code to execute when the event occurs. Common events: </p>
+						<ul>
+							<li> OnClick </li>
+							<li> OnLoad</li>
+						</ul>
+					<h2> Fonts </h2>
+					<ul>
+						<li>Size: 8 pt, 10 pt, 12 pt...(16 pt = 1.5 em)</li>
+						<li>Families [Arial, Times New Roman, Courier New]</li>
+						<li>Weight[Bold]</li>
+						<li>Caps</li>
+						<li>Kerning</li>
+						<li>Italics</li>
+					</ul>
+				<h2> Borders </h2>
+				<p> <border: 2px solid black> Bounding box outside the text content. Multiple ways to specify the box.</border></p>
+				<p>border: 1px// all four sides</p>
+				<p>border: 1px solid black;
+				</p>
+				<h2>Margin & Padding</h2>
+				<p>Spacing outside the borders, usually expressed in "px" or "em"
+				</p>
+
+
+<!-- "&lt;&gt;" -->
+</body>			
+</html>
