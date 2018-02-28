@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html lang="EN">
+<head>
+	<title>JS Bowling 2018</title>
+<script lang="Javascript">
+	function PlayBowling() {
+		var frames = [];//create an array for 10 frames
+		var totalScore = 0;
+		for(var idx =0; idx < 10; idx++) {
+			var frameScore = Math.floor(Math.random() * 11);
+			frames[idx] = frameScore;
+			totalScore += frameScore;
+		}
+		var gameResult = frames.join(",");
+		console.log(gameResult, "Total is", totalScore);
+		}
+	
+</script>
+<!-- PlayBowling {for
+var arr =[];
+for(var arr.Length = 0, arr.Length <10; arr.Length++) {
+	arr.push(Math.floor(Math.random * 11)
+}
+arr.join(",")
+}
+
+conole.log(arr)
+
+</script> -->
+</head>
+<body>
+	<h1>Bowling in Javascript</h1>
+	<body Onload="PlayBowling()">
+
+</body>			
+</html>

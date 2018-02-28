@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="EN">
+<head>
+	<title></title>
+	<script lang="javascript">
+		function Main() { // this function is started automatically
+		// }
+		function Clicked() {
+		var inputCtrl = document.getElementById("inp");
+		var inputText = inputCtrl.value;
+
+		var nbr = parseInt(inputText);
+		inputText = nbr * nbr;
+
+		var labelCtrl = document.getElementById("lbl");
+		labelCtrl.textContent = inputText;
+	}
+	function Add() {
+		var op1Ctrl = document.getElementById("op1");
+		var op1 = parseInt(op1Ctrl.value);
+		var op2Ctrl = document.getElementById("op1");
+		var op2 = parseInt(op2Ctrl.value);
+
+		
+		var inputText = op1 + op2;
+
+		var labelCtrl = document.getElementById("ans");
+		labelCtrl.textContent = inputText;
+	}
+	function Sub() {
+		var op1Ctrl = document.getElementById("op1");
+		var op1 = parseInt(op1Ctrl.value);
+		var op2Ctrl = document.getElementById("op1");
+		var op2 = parseInt(op2Ctrl.value);
+
+		
+		var inputText = op1 - op2;
+
+		var labelCtrl = document.getElementById("ans");
+		labelCtrl.textContent = inputText;
+	}
+		function Mult() {
+		var op1Ctrl = document.getElementById("op1");
+		var op1 = parseInt(op1Ctrl.value);
+		var op2Ctrl = document.getElementById("op1");
+		var op2 = parseInt(op2Ctrl.value);
+
+		
+		var inputText = op1 * op2;
+
+		var labelCtrl = document.getElementById("ans");
+		labelCtrl.textContent = inputText;
+	}
+		function Div() {
+		var op1Ctrl = document.getElementById("op1");
+		var op1 = parseInt(op1Ctrl.value);
+		var op2Ctrl = document.getElementById("op1");
+		var op2 = parseInt(op2Ctrl.value);
+
+		
+		var inputText = op1 / op2;
+
+		var labelCtrl = document.getElementById("ans");
+		labelCtrl.textContent = inputText;
+	}
+		function Power() {
+		var op1Ctrl = document.getElementById("op1");
+		var op1 = parseInt(op1Ctrl.value);
+		var op2Ctrl = document.getElementById("op1");
+		var op2 = parseInt(op2Ctrl.value);
+
+		
+		var inputText = Math.pow (op1, op2)
+
+		var labelCtrl = document.getElementById("ans");
+		labelCtrl.textContent = inputText;
+	}
+}
+
+	</script>
+</head>
+<body OnLoad="Main()">
+	<input id="op1" type ="text">
+	<input od="op2" type="text">
+	<label id="ans"></label>
+	<p></p>
+	<button id="add" OnClick="Add">Add</button>
+	<button id="sub" OnClick="Sub">Sub</button>
+	<button id="mul" OnClick="Mult">Mult</button>
+	<button id="div" OnClick="Div">Div</button>
+	<button id="power" OnClick="Power">Power</button>
+</body>			
+</html>

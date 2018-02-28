@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="EN">
+<head>
+	<title></title>
+	<script lang="javascript">
+		function Main() { // this function is started automatically
+		}
+		function Clicked() {
+			var name = document.getElementById("name").value;
+			var phone = document.getElementById("phone").value;
+			var tbodyCtrl = document.getElementById("tbody");
+
+			var tr = "<tr><td>" +name+ "</td><td>" +phone+ "</td></tr>";
+
+			tbodyCtrl.innerHTML += tr;
+
+		}
+	</script>
+</head>
+<body OnLoad="Main()">
+	<div>
+		<input id="name" type="text">
+		<input id="phone" type="text">
+		<button OnClick="Clicked()">Add</button>
+
+
+	</div>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Phone</th>
+			</tr>
+		</thead>
+		<tbody id="tbody">
+			<tr>
+				<td>Cong</td>
+				<td>513-497-2793</td>
+		</tbody>
+	</table>
+
+</body>			
+</html>
