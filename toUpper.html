@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="EN">
+<head>
+	<title></title>
+	<script lang="javascript">
+		var inputCtrl;
+		var labelCtrl;
+
+		function Main() {
+			inputCtrl = document.getElementById("inp"); //"inp" needs to match up with the label below 
+			labelCtrl = document.getElementById("lbl"); //"lbl" needs to match with the label below 
+		}
+		function capitalize() {
+			var theText = inputCtrl.value;
+			var theUpperCaseText = theText.toUpperCase(); //theText equals the value of the input. 
+			labelCtrl.textContent = theUpperCaseText; //"lbl" goes to textContent 
+		}
+	</script>
+</head>
+<body OnLoad="Main()">
+	
+	<p></p>
+	<h1>Assignment 4: Casing the Joint</h1>
+	<label>Text to be changed:</label><input id="inp" type="text">
+	<button id="upper" OnClick="capitalize()">CAPITALIZE ME CAP'N</button>
+	<label id="lbl"></label>
+
+</body>			
+</html>

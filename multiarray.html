@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html lang="EN">
+<head>
+	<title></title>
+
+	<script lang="javascript">
+		var arr=[];
+		var inputCtrl;
+		var labelCtrl;
+		
+		function Main() {
+		inputCtrl = document.getElementById("inp");
+		labelCtrl = document.getElementById("lbl");	
+		}
+
+		function Add() {
+		var nbr = inputCtrl.value;//new 
+		arr.push(nbr);//new
+		labelCtrl.textContent = arr.join (" ");//spits out each individual number in the Array to the label 
+		inputCtrl.value = "";
+		}
+		// arr = arr[].push(inputCtrl.value);
+		// display();
+		// }
+		function Multi() {
+			arr = arr.reverse();
+			var total = arr.toString();
+			labelCtrl.textContent = total;
+			arr = [];
+		}
+		//arr[].join(" * ") = document.getElementById("mult");
+		//function display() {
+		//arr[].toString() = labelCtrl.textContent;
+		//}
+	</script>
+</head>
+<body OnLoad="Main()">
+	
+	<p></p>
+	<h1>xxX MULTILY x ARRAYS Xxx </h1>
+	<input id="inp" type="number">
+	<button id="add" OnClick="Add()">Add a number</button>
+	<button id="mult" OnClick="Multi()">Round 'em up and multiply</button>
+	<label id="lbl"></label>
+</body>			
+</html>
